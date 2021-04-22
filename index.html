@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="js/main.js"></script> <!--w tej metodzie przeglądarka ładuje HTMl, i jeśli napotka script to nie może kontynuować tworzednia DOM. -->
+    <script defer src="js/main1.js"></script> <!-- defer sprawia, że js ładuje się w tle, i uruchamia go gdy DOM jest zbudowany-->
+    <script async src="js/main2.js"></script> <!-- używamy dla zewnętrznych script, w tym przypadku podczas pobierania skryptu DOM nie przestaje się budować, jedynie w momencie wykonania skryptu. Po wykonaniu dalej następuje budowanie strony.  -->
+</body>
+</html>
